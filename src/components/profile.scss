@@ -1,0 +1,232 @@
+#profile{
+    width: 100%;
+    padding: 4rem;
+    color: var(--white);
+    background: var(--card-back);
+
+    .hidden{
+        display: none;
+    }
+    .edit-form-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        background: linear-gradient(90deg,rgba(10, 207, 254,.6) 0,rgba(73, 90, 255,.6));
+        z-index: 10;
+
+        .close-form{
+            color: var(--white);
+            background: transparent;
+            position: absolute;
+            right: 3rem;
+            top: 4rem;
+            border: none;
+            box-shadow: none;
+             &:hover{
+                box-shadow: none; 
+             }
+
+            i{
+                font-size: 2rem;
+            }
+        }
+
+        .form-container{
+            width: max-content;
+            margin: auto;
+            padding: 5rem 4rem 3rem 4rem;
+            
+            form{
+                padding: 1rem 3rem 1rem 3rem;
+                background: var(--white);
+                border-radius: 6px;
+                box-shadow: 0px 7px 20px 7px rgba(0, 0, 0, 1);
+
+                h2{
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                }
+                
+                .input-wrapper{
+                    width: 100%;
+                    padding: 0 2rem;
+
+                    .submit-btn-container{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .user-profile-container{
+        width: 100%;
+        padding: 2rem 2rem 0 2rem;
+        margin: auto;
+
+        span{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h1{
+                margin-bottom: 1.5rem;
+                padding-left: 2.5rem; 
+                font-size: 2rem;
+            }
+
+            button{
+                padding: .7rem 2.5rem;
+                background: transparent;
+                height: 3rem;
+                margin-right: 2.5rem;
+                box-shadow: 0px 7px 20px 7px rgba(0, 0, 0, 0.3)
+
+            }
+        }
+
+        .profile-wrapper{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--background);
+            padding: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 7px 20px 7px rgba(0,0,0,.3);
+            transition: box-shadow .4s;
+
+            &:hover{
+                box-shadow: 0 7px 20px 7px rgba(0,0,0,.4);
+            }
+
+            .dp{
+                height: 180px;
+                width: 180px;
+                border-radius: 50%;
+                // background: url('../assets/images/man.svg');
+                background-size: cover;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                }
+            }
+            .user-info{
+                text-align: justify;
+                font-size: 1.2rem;
+
+                span{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: var(--white);
+
+                    .fa{
+                        margin-right: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20px;
+                        color: gray;
+                    }
+                    p,h2{
+                        color: var(--white);
+                    }
+
+                }
+            }
+        }
+    }
+    .user-performance-container{
+        width: 100%;
+        padding: 2rem;
+
+        h1{
+            margin-bottom: 1.5rem;
+            padding-left: 2.5rem; 
+            font-size: 2rem;
+        }
+
+        .performance-wrapper{
+            display: flex;
+            justify-content: space-between;
+
+            span{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    color: var(--white);
+                    font-size: 1.2rem;
+                    margin-right: 20px;
+
+                    i{
+                        margin-right: 10px;
+                        border-radius: 50%;
+                    }
+                    .green{
+                        color: green;
+                    }
+                    .red{
+                        color: red;
+                    }
+                    .gold{
+                        color: goldenrod;
+                    }
+                    .blue{
+                        color: #44facc;
+                    }
+                    .purple{
+                        color: #7819e5;
+                    }
+                }
+            }
+            .performance-card{
+                width: 66%;
+                background: var(--background);
+                padding: 1rem 2rem;
+                border-radius: 6px;
+                transition: box-shadow .4s;
+                box-shadow: 0 7px 20px 7px rgba(0,0,0,.3);
+
+                &:hover{
+                    box-shadow: 0 7px 20px 7px rgba(0,0,0,.4);
+                }
+            }
+            .p1{
+                
+            
+                h3{
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .p2{
+                width: 30%;
+
+                h3{
+                    text-align: center;
+                }
+                .score-count{
+                    font-size: 5rem;
+                    font-weight: bolder;
+                    border-bottom: 1px solid white;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.button{
+    padding: .7rem 2.5rem;
+    background: #196ae5;
+    box-shadow: 0px 7px 20px 7px rgba(0, 0, 0, 0.3)
+
+}
